@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/person/person",
+    "pages/input/input",
+    "pages/map/map",
+    "pages/mobile/mobile",    
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TaxiGo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/input/input",
+        "text": "叫车",
+        "iconPath":"./img/taxi.png",
+        "selectedIconPath":"./img/taxis.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "你的订单",
+        "iconPath": "./img/user.png",
+        "selectedIconPath":"./img/users.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
+
+

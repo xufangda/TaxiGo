@@ -1,0 +1,108 @@
+/* pages/input/input.wxss */
+.page{
+  display:block;
+  background: #f9f9f9;
+  height:100vh;
+}
+.userinfo {
+  position:relative;
+  top:30rpx;
+  display: block;
+  background-color: white;
+  width: 105rpx;
+  height: 90rpx;
+  border-radius: 0 50% 50% 0;
+}
+.userinfo-avatar{
+  float:right;
+  display:flex;/*Flex布局*/
+  display: -webkit-flex; /* Safari */
+  align-items:center;
+  width: 80rpx;
+  height: 80rpx;
+  margin-right:5rpx;
+  border-radius: 50%;
+}
+.page__bd{
+  display: block;
+}
+
+.banner{
+  margin:100rpx 0rpx;
+}
+.slogan{
+  width:100%;
+  left:50%;
+  text-align: center;  
+}
+.main_box{
+  background: white;
+  border-top:1rpx;
+  border-bottom:1rpx;
+}
+.position_relative{
+  position:relative;
+}
+.main_box_cell{
+  padding:30rpx;
+  padding-left:75rpx;
+}
+.dot_connector{
+  position: absolute;
+  top: 60rpx;
+  bottom: 21rpx;
+  left: 40rpx;
+  width: 1rpx;
+  height:113rpx;
+}
+.dot_connector:before {
+    bottom: -1.5rpx;
+    background-color: #F32F00;
+    border: 1rpx solid #F32F00;
+}
+.dot_connector:after, .dot_connector:before
+{
+    content: '';
+    position: absolute;
+    left: -2rpx;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.dot_connector:after {
+    top: -3.5rpx;
+    background-color: #27AA0B;
+    border: 1px solid #27AA0B;
+}
+.sepearte_line{
+  width:80%;
+  height:1px;
+  background-color:#d9d9d9;
+  margin:auto;
+}
+.submit{
+  margin:40rpx 50rpx;
+}
+.submit_button{
+  color: white;
+}
+.dest-btn{
+  display:block;
+  text-overflow:clip;
+  height: 50rpx;
+  overflow:hidden;
+  font-family:UICTFontTextStyleBody;
+  padding: 0px;
+  box-sizing:content-box;
+  font-size:40rpx;
+  text-align:left;
+  line-height:1.4em;
+  border-style:none;
+  -webkit-tap-highlight-color:transparent;
+  color:#e67e22;
+  background-color:#ffffff;
+}
+.dest-btn::after{
+  content:none;
+}

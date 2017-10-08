@@ -1,0 +1,39 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="userinfo">
+       <button class="userinfo-avatar" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else> 
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </block>
+    </view>
+  </view>
+  
+  <view class="page__bd">
+    <view class="banner">
+      <view class="slogan">
+        <p>您好，您现在想去哪？</p>
+      </view>
+    </view>
+    <view class="main_box">
+      <view class="position_relative">
+        <view class="dot_connector"></view>
+        <view class="main_box_cell">
+          <button bindtap="bindDpartTap" class="dest-btn depart">
+          <span style="color:#888888">从</span>  {{departure}}</button>
+        </view>
+        <view class="sepearte_line"></view>
+        <view class="main_box_cell">
+          <button bindtap="bindDestTap" class="dest-btn dest">
+          <span style="color:#888888">到</span>  {{destination}} </button>
+        </view>
+      </view>
+    </view>
+    <view class="submit">
+      <button bindtap="bindLogTap" type="primary" class="submit_button">呼叫专车</button>
+    </view>
+  </view>
+  
+  <!-- <view>
+    <icon type="info" size="20" color="grey"/><contact-button type="default-light" size="20" session-from="weapp">联系客服</contact-button>
+  </view> -->
+</view>

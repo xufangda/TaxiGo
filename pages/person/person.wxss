@@ -1,0 +1,32 @@
+/* pages/person/person.wxss */
+.page{
+  display:flex;
+  background: #f9f9f9;
+  height:100vh;
+}
+
+.id_banner{
+  background: #ffffff;
+  height:150rpx;
+  width:100%;
+  margin:30rpx 0rpx;
+}
+.userinfo {
+  position:relative;
+  top:30rpx;
+  display: block;
+  background-color: white;
+  width: 105rpx;
+  height: 90rpx;
+  border-radius: 0 50% 50% 0;
+}
+.userinfo-avatar{
+  float:right;
+  display:flex;/*Flex布局*/
+  display: -webkit-flex; /* Safari */
+  align-items:center;
+  width: 80rpx;
+  height: 80rpx;
+  margin-right:5rpx;
+  border-radius: 10%;
+}

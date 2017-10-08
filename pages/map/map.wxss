@@ -1,0 +1,48 @@
+/* pages/map/map.wxss */
+.page{
+  display:flex;
+  background: #f9f9f9;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navibar{
+  padding: 18rpx 20rpx;
+}
+
+.navibar-content{
+  background: #ffffff;
+  border-style: solid;
+  border-color: #e9e9e9;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+  padding: 8rpx;
+}
+
+.navibar-input{
+  text-align: center;
+  display:block;
+  height:1.4rem;
+  text-overflow:clip;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family:UICTFontTextStyleBody;
+  min-height:1.4rem;
+  padding: 0px;
+  line-height:1.4em;
+  box-sizing:content-box;
+  font-size:16px;
+  border-style:none;
+  -webkit-tap-highlight-color:transparent;
+  color:#999999;
+  background-color:#ffffff;
+}
+
+ .navibar-input::after{
+  content:none;
+} 
+
+icon{
+  vertical-align: baseline;
+  transform: translateY(2%);
+}
